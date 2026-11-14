@@ -398,3 +398,20 @@ Antes da apresentação, o autor deve ser capaz de explicar e modificar:
 ## Licença
 
 Este projeto está disponível sob a [Licença MIT](LICENSE). É permitido usar, estudar, modificar e distribuir o código, desde que o aviso de copyright e o texto da licença sejam preservados.
+
+## Evoluções futuras
+
+Este repositório continuará sendo utilizado como laboratório para integrar conhecimentos de outras disciplinas ao projeto original de Estruturas de Dados.
+
+A próxima evolução planejada é aplicar conceitos de **Sistemas Operacionais e escalonamento de processos** para automatizar a execução dos atendimentos. Em vez de depender exclusivamente das opções manuais “chamar próximo” e “chamar prioritário”, um escalonador poderá selecionar e iniciar atendimentos conforme uma política configurável.
+
+Possíveis políticas incluem:
+
+- FCFS/FIFO para preservar a ordem de chegada;
+- prioridade para casos urgentes e críticos;
+- Round Robin com quantum de atendimento;
+- envelhecimento de prioridade para evitar espera indefinida;
+- escalonamento híbrido entre fila comum e heap prioritário;
+- simulação preemptiva, permitindo interromper e retomar um atendimento.
+
+Também estão previstas evoluções relacionadas a persistência de dados, concorrência, interface, métricas e observabilidade. O planejamento completo está disponível no [roadmap do projeto](docs/ROADMAP.md).
