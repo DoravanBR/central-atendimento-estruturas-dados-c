@@ -1,0 +1,31 @@
+# Compilação C
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Arquivos de depuração e cobertura
+*.pdb
+*.ilk
+*.gcda
+*.gcno
+*.gcov
+
+# Editores e sistema operacional
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.log
+
