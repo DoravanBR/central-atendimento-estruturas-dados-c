@@ -1,0 +1,45 @@
+name: Compilação e testes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  testar:
+    name: GCC / C11 / 12 testes
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obter o código
+        uses: actions/checkout@v4
+
+      - name: Exibir versão do compilador
+        run: gcc --version
+
+      - name: Compilar programa principal
+        run: make
+
+      - name: Compilar e executar testes
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          fontes=(
+            atendimento.c entrada.c repositorio.c pilha.c fila.c
+            bst.c avl.c heap.c arvore_decisao.c validacao.c
+            sistema.c experimentos.c
+          )
+
+          mkdir -p build/testes
+
+          for teste in testes/teste_*.c; do
+            nome="$(basename "${teste%.c}")"
+            echo "::group::${nome}"
+            gcc -std=c11 -Wall -Wextra -pedantic -I. \
+              "${fontes[@]}" "$teste" -o "build/testes/$nome"
+            "build/testes/$nome"
+            echo "::endgroup::"
+          done
+

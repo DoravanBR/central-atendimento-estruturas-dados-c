@@ -1,6 +1,51 @@
 # Central de Atendimento e Priorização
 
-Trabalho Prático Integrador da disciplina de Estruturas de Dados II, desenvolvido em C11.
+![Linguagem C](https://img.shields.io/badge/linguagem-C11-00599C?logo=c)
+![Estruturas de dados](https://img.shields.io/badge/estruturas-fila%20%7C%20pilha%20%7C%20BST%20%7C%20AVL%20%7C%20heap-176B87)
+[![Compilação e testes](https://github.com/DoravanBR/central-atendimento-estruturas-dados-c/actions/workflows/testes.yml/badge.svg)](https://github.com/DoravanBR/central-atendimento-estruturas-dados-c/actions/workflows/testes.yml)
+![Uso de IA](https://img.shields.io/badge/IA-apoio%20ao%20planejamento-6F42C1)
+
+Trabalho Prático Integrador da disciplina de Estruturas de Dados II, desenvolvido em C11. Além da implementação, este repositório documenta como a inteligência artificial pode apoiar a interpretação do problema, a especificação, a arquitetura e os testes sem substituir a compreensão e as decisões do autor.
+
+## Destaques
+
+- 13 componentes com responsabilidades separadas;
+- 7 estruturas trabalhando sobre o mesmo domínio;
+- propriedade da memória explicitamente definida;
+- integração transacional com rollback;
+- 12 testes automáticos;
+- comparação experimental entre BST e AVL;
+- relatório completo com requisitos, fluxogramas e etapas de implementação;
+- prompt reutilizável para planejar projetos futuros com apoio de IA.
+
+## Fluxo principal
+
+```mermaid
+flowchart LR
+    E[Entrada validada] --> C[Cadastro]
+    C --> I[Repositório + BST + AVL]
+    I --> D[Árvore de decisão]
+    D -->|Comum ou moderado| F[Fila FIFO]
+    D -->|Urgente ou crítico| H[Heap máximo]
+    F --> A[Atendimento]
+    H --> A
+    A --> X[Conclusão]
+    C -. eventos .-> P[Pilha de histórico]
+    D -. eventos .-> P
+    A -. eventos .-> P
+    X -. eventos .-> P
+```
+
+## Documentação
+
+| Documento | Conteúdo |
+|---|---|
+| [Especificação](ESPECIFICACAO.md) | requisitos, regras e decisões tomadas antes da integração |
+| [Relatório completo](docs/RELATORIO_COMPLETO_PROJETO.md) | problema, interpretação, arquitetura, fluxogramas, implementação e testes |
+| [Relatório completo em PDF](docs/Relatorio_Completo_Planejamento_Arquitetura_Implementacao.pdf) | versão diagramada do relatório técnico |
+| [Comparação BST e AVL](RELATORIO.md) | metodologia, métricas, resultados e conclusão experimental |
+| [Artigo para LinkedIn](docs/ARTIGO_LINKEDIN.md) | relato sobre IA aplicada ao planejamento e à arquitetura |
+| [Prompt reutilizável](docs/PROMPT_PLANEJAMENTO_ARQUITETURA.md) | processo guiado para projetos futuros |
 
 ## Autor
 
