@@ -4,6 +4,7 @@
 ![Estruturas de dados](https://img.shields.io/badge/estruturas-fila%20%7C%20pilha%20%7C%20BST%20%7C%20AVL%20%7C%20heap-176B87)
 [![Compilação e testes](https://github.com/DoravanBR/central-atendimento-estruturas-dados-c/actions/workflows/testes.yml/badge.svg)](https://github.com/DoravanBR/central-atendimento-estruturas-dados-c/actions/workflows/testes.yml)
 ![Uso de IA](https://img.shields.io/badge/IA-apoio%20ao%20planejamento-6F42C1)
+[![Licença MIT](https://img.shields.io/badge/licença-MIT-green.svg)](LICENSE)
 
 Trabalho Prático Integrador da disciplina de Estruturas de Dados II, desenvolvido em C11. Além da implementação, este repositório documenta como a inteligência artificial pode apoiar a interpretação do problema, a especificação, a arquitetura e os testes sem substituir a compreensão e as decisões do autor.
 
@@ -393,3 +394,7 @@ Antes da apresentação, o autor deve ser capaz de explicar e modificar:
 - subida e descida no heap;
 - compartilhamento dos atendimentos;
 - integração e rollback.
+
+## Licença
+
+Este projeto está disponível sob a [Licença MIT](LICENSE). É permitido usar, estudar, modificar e distribuir o código, desde que o aviso de copyright e o texto da licença sejam preservados.
