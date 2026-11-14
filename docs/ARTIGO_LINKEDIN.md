@@ -1,5 +1,7 @@
 # Como utilizar a IA para planejar, projetar e arquitetar soluções - sem deixar tudo a cargo dela
 
+![Capa do artigo: planejamento e arquitetura de software com apoio de IA](imagens/capa-artigo-linkedin.png)
+
 Quando comecei um projeto de Estruturas de Dados em C, eu já havia implementado fila, pilha, BST, AVL e heap separadamente. O desafio real apareceu depois: como fazer todas essas estruturas trabalharem juntas em um sistema coerente?
 
 Foi aí que usei a inteligência artificial de uma forma diferente. Em vez de pedir “faça o projeto”, usei a IA como parceira para planejar, questionar decisões e revisar meu raciocínio.
