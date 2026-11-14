@@ -58,6 +58,16 @@ Nos experimentos com 20 códigos, a BST atingiu altura 19 nas inserções cresce
 
 Mais importante que os números foi conseguir explicar por que isso aconteceu.
 
+## Um projeto que não termina na primeira entrega
+
+Depois de concluir a versão inicial, decidi manter o repositório como um laboratório interdisciplinar.
+
+A primeira evolução planejada utilizará conceitos de Sistemas Operacionais para automatizar a execução dos atendimentos. Hoje, o usuário escolhe manualmente quando chamar o próximo caso comum ou prioritário. Em uma versão futura, um módulo escalonador poderá selecionar os atendimentos conforme políticas como FCFS, prioridade, Round Robin, envelhecimento e escalonamento híbrido.
+
+Essa evolução não começará diretamente no código. Antes, o novo problema será analisado da mesma forma: requisitos, estados, métricas, fluxogramas, alternativas arquiteturais, critérios de aceitação e testes.
+
+Outras etapas poderão incorporar persistência, concorrência, análise de desempenho, interfaces gráficas e sistemas distribuídos. Assim, o mesmo domínio servirá para conectar conhecimentos de diferentes disciplinas e mostrar como a arquitetura evolui quando surgem novos requisitos.
+
 ## O que aprendi sobre usar IA em projetos
 
 Uma boa utilização da IA não começa com um pedido de código. Começa com contexto e perguntas.
@@ -84,6 +94,10 @@ A IA pode acelerar o planejamento e ampliar a qualidade das perguntas. Pode reve
 Neste projeto, a IA não substituiu o estudo das estruturas de dados. Ela ajudou a conectar o estudo a um processo real de engenharia: problema, interpretação, requisitos, arquitetura, implementação, teste e documentação.
 
 Esse, para mim, é o uso mais interessante da IA no desenvolvimento de software: não pensar por nós, mas nos ajudar a pensar melhor.
+
+O código, os testes, os relatórios, o roadmap e o prompt reutilizável estão disponíveis no GitHub:
+
+https://github.com/DoravanBR/central-atendimento-estruturas-dados-c
 
 **E você: tem usado IA apenas para gerar código ou também para melhorar o seu processo de decisão?**
 
